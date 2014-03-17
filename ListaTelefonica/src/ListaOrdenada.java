@@ -50,16 +50,16 @@ public class ListaOrdenada<T extends Comparable<T>> extends ListaEncadeada<T> {
 	
 	public static void main(String[] args) {
 		// criar lista
-		ListaOrdenada<Integer> lista = new ListaOrdenada<Integer>();
+		ListaOrdenada<String> lista = new ListaOrdenada<String>();
 		
-		Nodo<Integer> novo = new Nodo<Integer>(1);
+		Nodo<String> novo = new Nodo<String>("m");
 		lista.insert(novo);
 		
-		lista.insert(new Nodo<Integer>(2), novo);
+		lista.insert(new Nodo<String>("u"), novo);
 		
-		lista.append(new Nodo<Integer>(3));
+		lista.append(new Nodo<String>("d"));
 		
-		lista.insert(new Nodo<Integer>(4), novo);
+		lista.append(new Nodo<String>("r"));
 		
 		lista.print();
 	}

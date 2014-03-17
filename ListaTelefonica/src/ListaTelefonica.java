@@ -5,12 +5,12 @@ public class ListaTelefonica {
 	
 	public static void main(String[] args) {
 		
-		Arquivo arquivo = new Arquivo();
+		/*Arquivo arquivo = new Arquivo();
 		
 		arquivo.deletarArquivo();
 		arquivo.deletarDiretorio();
 		arquivo.criaArquivo();
-		arquivo.escreveArquivo();
+		arquivo.escreveArquivo();*/
 		
 		ListaOrdenada<String> contatos = new ListaOrdenada<String>();
 	
@@ -25,8 +25,8 @@ public class ListaTelefonica {
 		
 		for (int i = 0; i < 19; i++) {
 			
-		Nodo<String> proximoscontatos = new Nodo<String>(lerArq.readLine());
-		contatos.append(proximoscontatos);
+		Nodo<String> proximosContatos = new Nodo<String>(lerArq.readLine());
+		contatos.append(proximosContatos);
 		
 		}
 		
